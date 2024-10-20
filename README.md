@@ -18,14 +18,12 @@ erDiagram
         enum status "ENUM('active', 'inactive', 'deactivated')"
         timestamp created_at "Default: CURRENT_TIMESTAMP"
         timestamp updated_at "Default: CURRENT_TIMESTAMP ON UPDATE"
-        json permissions "Optional, stores permissions in JSON"
     }
     
     TRANSACTION {
         int id PK "Auto Increment, Primary Key"
         int user_id FK "Foreign Key to USER"
         decimal amount "Transaction amount"
-        varchar type "Deposit or Withdraw"
         text notes "Transaction notes"
         timestamp created_at "Default: CURRENT_TIMESTAMP"
     }
