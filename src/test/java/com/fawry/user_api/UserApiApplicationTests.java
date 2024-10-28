@@ -1,4 +1,4 @@
-package com.example.User_Api;
+package com.fawry.user_api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
